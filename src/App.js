@@ -1,10 +1,8 @@
-
-
+import ListaPeliculas from "./Components/Main/ListaPeliculas";
 function App() {
   return (
-    <div >
-      
-      
+    <div>
+      <ListaPeliculas />
     </div>
   );
 }
