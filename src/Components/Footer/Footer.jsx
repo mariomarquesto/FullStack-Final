@@ -4,40 +4,38 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="container-fluid  bg-dark text-white ">
-      <div className="row ">
-        <div className="col-sm-2 col-md-3  justify-content-center">
+      <div className=" row ">
+        <div className="col col-3 d-flex justify-content-center">
           <div className="row">
-            <span className="text-decoration-underline">Información</span>
+            <span className="fw-bolder">Información</span>
             <span>Acerca de nosotros</span>
             <span>Avisos legales</span>
             <span>Ayuda</span>
           </div>
         </div>
-        <div className="col-sm-2 col-md-3  justify-content-center">
+        <div className="col col-3 d-flex justify-content-center ">
           <div className="row">
-            <span className="text-decoration-underline">Productos</span>
+            <span className="fw-bolder">Productos</span>
             <span>Cuenta Familiar</span>
             <span>Tarjetas de regalo</span>
             <span>Plan Premium</span>
           </div>
         </div>
-        <div className="col-sm-2 col-md-3 justify-content-center">
+        <div className="col  col-3 d-flex justify-content-center">
           <div className="row">
-            <span className="text-decoration-underline">
-              Trabaja con nosotros
-            </span>
+            <span className="fw-bolder">Trabaja con nosotros</span>
             <span>Carreras</span>
           </div>
         </div>
-        <div className="col-sm-2 col-md-3 justify-content-center">
-          <div className="row">
-            <div className="row my">
-              <span className="text-decoration-underline">Registrate Gratis</span>
-            <span className="my-6">
-              <button className="btn btn-outline-light  "> Registrate </button>
+        <div className="col  col-3  d-flex justify-content-center">
+          <div className="row ">
+            <span className="fw-bolder">Registrate Gratis</span>
+            <span>
+              <button className="btn btn-outline-light d-flex justify-content-center p-2 ">
+                {" "}
+                Registrate{" "}
+              </button>
             </span>
-            </div>
-            
           </div>
         </div>
       </div>
@@ -110,10 +108,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <hr />
       <div
-        className="copyright text-center mb-2 fst-italic 
+        className="  d-flex justify-content-center align-items-center fst-italic 
       "
       >
         Copyright © 2022
