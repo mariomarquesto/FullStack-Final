@@ -1,189 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    --color-1: #0f044c;
-    --color-2: #141e61;
-    --color-3: #787a91;
-    --color-4: #eeeeee;
-  }
-  body {
-    background-color: #080f29;
-  }
-  
-  /* PELICULA DESTACADA */
-  .pelicula-destacada {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    min-height: 40.62em;
-    color: #fff;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex: end;
-  }
-  .pelicula1 {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      ),
-      url(../img/img-listaPeliculas/batman.jpg);
-  }
-  .pelicula2 {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      ),
-      url(../img/img-listaPeliculas/uncharted.jpg);
-  }
-  .pelicula3 {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      ),
-      url(../img/img-listaPeliculas/spiderman.jpg);
-  }
-  .pelicula-destacada .container {
-    margin-bottom: 6.25em;
-  }
-  .pelicula-destacada .titulo {
-    font-weight: 600px;
-    font-size: 3.12em;
-    margin-bottom: 0.4em;
-  }
-  .pelicula-destacada .boton {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 0.31em;
-    padding: 0.93em 1.87em;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s ease all;
-    font-size: 1.12em;
-  }
-  .pelicula-destacada .boton:hover {
-    background: #fff;
-    color: #000;
-  }
-  .pelicula-destacada .boton i {
-    margin-right: 1em;
-  }
-  /* ----------------TITULO DE CATEGORIAS Y CONTROLES------------- */
-  .titulo-controles {
-    display: flex;
-    justify-content: space-between;
-    flex: end;
-  }
-  .titulo-controles h3 {
-    color: #fff;
-    font-size: 30px;
-  }
-  .titulo-controles .indicadores button {
-    background: #fff;
-    height: 3px;
-    width: 10px;
-    cursor: pointer;
-    border: none;
-    margin-right: 2px;
-  }
-  .titulo-controles .indicadores button:hover,
-  .titulo-controles .indicadores button.active {
-    background: #296ed5;
-  }
-  /*------------------- CATEGORIAS Y FLECHAS ---------------------*/
-  .categorias {
-    margin-top: 40px;
-    margin-bottom: 70px;
-  }
-  .categorias .contenedorPrincipal {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  .categorias .contenedorPrincipal .flecha-izquierda,
-  .categorias .contenedorPrincipal .flecha-derecha {
-    position: absolute;
-    border: none;
-    background: rgba(0, 0, 0, 0.3);
-    top: calc(50% - 25%);
-    font-size: 40px;
-    height: 50%;
-    line-height: 40px;
-    width: 50px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 500;
-    transition: 0.2s ease all;
-  }
-  .categorias .contenedorPrincipal .flecha-izquierda:hover,
-  .categorias .contenedorPrincipal .flecha-derecha:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
-  .categorias .contenedorPrincipal .flecha-izquierda {
-    left: 0;
-  }
-  .categorias .contenedorPrincipal .flecha-derecha {
-    right: 0;
-  }
-  
-  /* -------------CAROUSEL DE PELICULAS RECOMENDADAS--------------- */
-  .contenedorPrincipal .contenedorCarousel {
-    width: 100%;
-    padding: 20px 0px;
-    overflow: hidden;
-    scroll-behavior: smooth;
-  }
-  .contenedorPrincipal .contenedorCarousel .carousel {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  /* .contenedorPrincipal .contenedorCarousel .carousel {
-    display: flex;
-    flex-wrap: nowrap;
-  } */
-  .contenedorPrincipal .contenedorCarousel .carousel .pelicula {
-    min-width: 20%;
-    transition: 1s ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  .contenedorPrincipal .contenedorCarousel .carousel .pelicula.hover {
-    transform: scale(1.2);
-    transform-origin: center;
-  }
-  .contenedorPrincipal .contenedorCarousel .carousel .pelicula img {
-    width: 100%;
-    vertical-align: top;
-  }
-  
-  /* -------------MEDIA QUERIES------------------ */
-  @media (min-width: 768px) {
-    .contenedorPrincipal .contenedorCarousel .carousel {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-  }
-  @media (min-width: 1199.98px) {
-    .contenedorPrincipal .contenedorCarousel .carousel {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 0;
-    }
-  }
-  
-  /* ///////PARA PANTALLA GRANDE */
-  /* .pelicula-destacada .description{
-      font-weight: normal;
-      font-size: 1em;
-      line-height: 1.75em;
-      max-width: 50%;
-      margin-bottom: 1.25em;
-  } */
-  /* .imgBatman {
-    position: relative;
-    right: 450px;
-  } */
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-1: #0f044c;
+  --color-2: #141e61;
+  --color-3: #787a91;
+  --color-4: #eeeeee;
+}
+body {
+  background-color: #080f29;
+  margin: 0 5%;
+}
+
+/* PELICULA DESTACADA */
+.pelicula-destacada {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex: end;
+}
+.pelicula1 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../../assets/img-listaPeliculas/batman.jpg);
+}
+.pelicula2 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../../assets/img-listaPeliculas/uncharted.jpg);
+}
+.pelicula3 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../../assets/img-listaPeliculas/spiderman.jpg);
+}
+.pelicula-destacada .container {
+  margin-bottom: 6.25em;
+}
+.pelicula-destacada .titulo {
+  font-weight: 600px;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+.pelicula-destacada .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+.pelicula-destacada .boton:hover {
+  background: #fff;
+  color: #000;
+}
+.pelicula-destacada .boton i {
+  margin-right: 1em;
+}
+/* ----------------TITULO DE CATEGORIAS Y CONTROLES------------- */
+.titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  flex: end;
+}
+.titulo-controles h3 {
+  color: #fff;
+  font-size: 30px;
+}
+/* -------------CAROUSEL DE PELICULAS RECOMENDADAS--------------- */
+.item {
+  height: 18rem;
+  min-width: 25rem;
+  padding: 2rem;
+}
+.item img {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.slider {
+  display: flex;
+  cursor: grab;
+}
+.slider-container {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
