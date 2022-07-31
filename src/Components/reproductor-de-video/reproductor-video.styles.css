@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+body{
+   background-color: #8a1d1d;
+   padding:20px;
+}
+
+h1{
+   margin:0 ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(236, 221, 221);
+}
+
+.container{
+   max-width: 1200px;
+   margin:100px auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   gap:20px;
+}
+
+.container .main-video-container{
+   flex:1 1 700px;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
+
+.container .main-video-container .main-video{
+   margin-bottom: 7px;
+   border-radius: 5px;
+   width: 100%;
+}
+
+.container .main-video-container .main-vid-title{
+   font-size: 20px;
+   color:#444;
+}
+
+.container .video-list-container{
+   flex:1 1 350px;
+   height: 485px;
+   overflow-y: scroll;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
+
+.container .video-list-container::-webkit-scrollbar{
+   width: 10px;
+}
+
+.container .video-list-container::-webkit-scrollbar-track{
+   background-color: #fff;
+   border-radius: 5px;
+}
+
+.container .video-list-container::-webkit-scrollbar-thumb{
+   background-color: #444;
+   border-radius: 5px;
+}
+
+.container .video-list-container .list{
+   display: flex;
+   align-items: center;
+   gap:15px;
+   padding:10px;
+   background-color: #eee;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.container .video-list-container .list:last-child{
+   margin-bottom: 0;
+}
+
+.container .video-list-container .list.active{
+   background-color: #444;
+}
+
+.container .video-list-container .list.active .list-title{
+   color:#fff;
+}
+
+.container .video-list-container .list .list-video{
+   width: 100px;
+   border-radius: 5px;
+}
+
+.container .video-list-container .list .list-title{
+   font-size: 17px;
+   color:#444;
+}
+
+
+@media (max-width:1200px){
+
+   .container{
+      margin:0;
+   }
+
+}
+
+@media (max-width:450px){
+
+   .container .main-video-container .main-vid-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .container .video-list-container .list{
+      flex-flow: column;
+      gap:10px;
+   }
+
+   .container .video-list-container .list .list-video{
+      width: 100%;
+   }
+
+   .container .video-list-container .list .list-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+}
+
+/*estilos del boton Volver*/
+
+.button button {
+   position: relative;
+    padding: 10px 15px;
+    outline: none;
+    background: #350642;
+    color: #dcc2e4;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.button button:hover{
+   color: #fff;
+}
+.button button samp {
+   position: absolute;
+background: #fff;
+transition: .5s;
+}
+.button button samp:nth-child(1){
+   width: 100%;
+   height: 1px;
+   top: 0;
+   left: -100%;
+}
+.button button samp:nth-child(2){
+   width: 100%;
+   height: 1px;
+   bottom: 0;
+   right:-100%;
+}
+.button button samp:nth-child(3){
+   width: 1px;
+   height: 100%;
+   bottom:-100%;
+   left: 0;
+}
+.button button samp:nth-child(4){
+   width: 1px;
+   height: 100%;
+   top: -100%;
+   right: 0;
+}
+.button button:hover samp:nth-child(1){
+left: 0;
+}
+.button button:hover samp:nth-child(2){
+  right: 0;
+}
+.button button:hover samp:nth-child(3){
+   bottom: 0;
+}
+.button button:hover samp:nth-child(4){
+   top: 0;
+}
